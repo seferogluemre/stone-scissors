@@ -17,3 +17,12 @@ def stone_scissors():
 
         comp_selected = random.choice(options)
         print(f"Bilgisayarın seçimi: {comp_selected}")
+
+         if kullanici_secimi == bilgisayar_secimi:
+            print("Berabere!")
+        elif (kullanici_secimi == "Taş" and bilgisayar_secimi == "Makas") or \
+             (kullanici_secimi == "Kağıt" and bilgisayar_secimi == "Taş") or \
+             (kullanici_secimi == "Makas" and bilgisayar_secimi == "Kağıt"):
+            print("Kazandınız!")
+        else:
+            print("Kaybettiniz!")
